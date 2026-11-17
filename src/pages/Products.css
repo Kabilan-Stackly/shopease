@@ -1,0 +1,407 @@
+/* =========================
+   PRODUCTS PAGE
+========================= */
+
+.products-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 5%;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+/* =========================
+   PRODUCTS HEADER
+========================= */
+
+.products-header {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.products-header span {
+  color: #7456f1;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.products-header h1 {
+  color: #17172b;
+  font-size: 38px;
+  font-weight: 800;
+  margin: 14px 0;
+}
+
+.products-header p {
+  color: #77778c;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================
+   SEARCH AND FILTER
+========================= */
+
+.products-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 350px;
+  height: 48px;
+
+  padding: 0 15px;
+
+  border: 1px solid #e4e2ee;
+  border-radius: 10px;
+
+  background: #ffffff;
+  color: #88889b;
+
+  box-sizing: border-box;
+}
+
+.search-box:focus-within {
+  border-color: #7456f1;
+  box-shadow: 0 0 0 3px rgba(116, 86, 241, 0.1);
+}
+
+.search-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  color: #17172b;
+  font-size: 14px;
+}
+
+.search-box input::placeholder {
+  color: #9999a8;
+}
+
+.products-controls select {
+  width: 220px;
+  height: 48px;
+
+  padding: 0 15px;
+
+  border: 1px solid #e4e2ee;
+  border-radius: 10px;
+
+  background: #ffffff;
+  color: #17172b;
+
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.products-controls select:focus {
+  border-color: #7456f1;
+}
+
+/* =========================
+   RESULTS COUNT
+========================= */
+
+.results-count {
+  color: #77778c;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+/* =========================
+   PRODUCTS GRID
+========================= */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+/* =========================
+   NO PRODUCTS
+========================= */
+
+.no-products {
+  text-align: center;
+  padding: 70px 20px;
+  background: #f8f7fc;
+  border-radius: 15px;
+}
+
+.no-products h2 {
+  color: #17172b;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.no-products p {
+  color: #77778c;
+  font-size: 14px;
+}
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+.products-error {
+  text-align: center;
+  padding: 20px;
+  color: #dc2626;
+  background: #fff1f2;
+  border-radius: 10px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+  .products-page {
+    padding: 35px 4%;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .products-header h1 {
+    font-size: 34px;
+  }
+
+}
+
+/* =========================
+   SMALL TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .products-page {
+    padding: 30px 20px;
+  }
+
+  .products-header {
+    margin-bottom: 30px;
+  }
+
+  .products-header h1 {
+    font-size: 30px;
+  }
+
+  .products-controls {
+    gap: 12px;
+  }
+
+  .search-box {
+    width: 60%;
+  }
+
+  .products-controls select {
+    width: 40%;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .products-page {
+    padding: 25px 15px;
+  }
+
+  .products-header {
+    margin-bottom: 25px;
+  }
+
+  .products-header span {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .products-header h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .products-header p {
+    font-size: 13px;
+    padding: 0 5px;
+  }
+
+  /* Search and Category */
+
+  .products-controls {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .search-box {
+    width: 100%;
+    height: 46px;
+  }
+
+  .products-controls select {
+    width: 100%;
+    height: 46px;
+  }
+
+  /* Results */
+
+  .results-count {
+    font-size: 13px;
+    margin: 18px 0;
+  }
+
+  /* Two Column Grid */
+
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 360px) {
+
+  .products-page {
+    padding: 20px 10px;
+  }
+
+  .products-header h1 {
+    font-size: 23px;
+  }
+
+  .products-grid {
+    gap: 10px;
+  }
+
+}
+
+/* Products controls layout */
+.products-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.products-controls select {
+    min-width: 180px;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.products-controls select:focus {
+    border-color: #2563eb;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .products-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .products-controls select {
+        width: 100%;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+}
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.page-btn {
+    min-width: 42px;
+    height: 42px;
+    padding: 0 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.page-btn:hover:not(:disabled) {
+    background: #eeeaff;
+    border-color: #7357ff;
+    color: #7357ff;
+}
+
+.page-btn.active {
+    background: #7357ff;
+    color: #fff;
+    border-color: #7357ff;
+}
+
+.page-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 480px) {
+    .pagination {
+        gap: 6px;
+    }
+
+    .page-btn {
+        min-width: 36px;
+        height: 36px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,136 @@
+.admin-layout {
+  min-height: 100vh;
+  display: flex;
+  background: #f7f7fb;
+}
+
+.admin-sidebar {
+  width: 250px;
+  min-height: 100vh;
+  padding: 30px 20px;
+  background: #17172b;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.admin-logo {
+  font-size: 27px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 55px;
+}
+
+.admin-logo span {
+  color: #927bff;
+}
+
+.sidebar-label {
+  color: #85859e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px;
+  color: #b5b5c9;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  background: #7456f1;
+  color: white;
+}
+
+.back-store {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  padding: 14px;
+  color: #c4c4d4;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.admin-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.admin-header {
+  height: 75px;
+  padding: 0 35px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeF5;
+}
+
+.admin-header h2 {
+  font-size: 20px;
+  color: #17172b;
+}
+
+.admin-header span {
+  padding: 9px 16px;
+  background: #f1edff;
+  color: #7456f1;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.admin-content {
+  padding: 35px;
+}
+
+@media (max-width: 700px) {
+  .admin-sidebar {
+    width: 75px;
+    padding: 25px 10px;
+  }
+
+  .admin-logo {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .sidebar-label,
+  .sidebar-nav a,
+  .back-store {
+    font-size: 0;
+    justify-content: center;
+  }
+
+  .sidebar-nav a {
+    padding: 14px 5px;
+  }
+
+  .admin-content {
+    padding: 20px 12px;
+  }
+
+  .admin-header {
+    padding: 0 15px;
+  }
+}
